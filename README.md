@@ -2,7 +2,7 @@
 
 A graphical interface for the S2VNA program created as part of a test project. The interface connects via a TCP socket to the S2VNA application, which acts as a server.
 
-#### The application is created as a portfolio and is not commercial! It was created solely as a test project.
+#### The application is created as a portfolio and is not commercial.
 
 ![Screenshot](https://github.com/DenisDennisov/Interface_S2VNA-test_task/blob/main/images/main_menu.png)
 
