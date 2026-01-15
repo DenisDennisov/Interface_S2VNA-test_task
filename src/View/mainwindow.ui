@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>10</width>
+    <height>10</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: rgb(38, 38, 38);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	background-color: rgb(65, 65, 65);
+	border-radius: 5px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="header_app_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 700 13pt &quot;Yu Gothic UI&quot;;
+	color: rgb(205, 205, 205);
+}</string>
+            </property>
+            <property name="text">
+             <string>S2VNA Interface</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="header_start_and_stop_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 11pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Начальная и конечная частота</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QDoubleSpinBox" name="startFreq_doubleSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QDoubleSpinBox {
+	background-color: rgb(215, 215, 215);
+	font: 10pt &quot;Segoe UI&quot;;
+	color: black;
+	border-radius: 5px;
+}
+
+QDoubleSpinBox::hover {
+	background-color: rgb(185, 185, 185);
+}
+
+QDoubleSpinBox::focus {
+	background-color: rgb(35, 35, 35);
+	color: white;
+}</string>
+              </property>
+              <property name="decimals">
+               <number>4</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>20.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.000100000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="startFreq_label">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	font: 9pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+              </property>
+              <property name="text">
+               <string>GHz</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_9">
+              <property name="minimumSize">
+               <size>
+                <width>15</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="stopFreq_doubleSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QDoubleSpinBox {
+	background-color: rgb(215, 215, 215);
+	font: 10pt &quot;Segoe UI&quot;;
+	color: black;
+	border-radius: 5px;
+}
+
+QDoubleSpinBox::hover {
+	background-color: rgb(185, 185, 185);
+}
+
+QDoubleSpinBox::focus {
+	background-color: rgb(35, 35, 35);
+	color: white;
+}</string>
+              </property>
+              <property name="decimals">
+               <number>4</number>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>20.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.000100000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="stopFreq_label">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	font: 9pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+              </property>
+              <property name="text">
+               <string>GHz</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_10">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="header_points_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 11pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Количество точек</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QSpinBox" name="points_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QSpinBox {
+	background-color: rgb(215, 215, 215);
+	font: 10pt &quot;Segoe UI&quot;;
+	color: black;
+	border-radius: 5px;
+}
+
+QSpinBox::hover {
+	background-color: rgb(185, 185, 185);
+}
+
+QSpinBox::focus {
+	background-color: rgb(35, 35, 35);
+	color: white;
+}</string>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_11">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="header_power_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 11pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Мощность прибора</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QDoubleSpinBox" name="power_doubleSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QDoubleSpinBox {
+	background-color: rgb(215, 215, 215);
+	font: 10pt &quot;Segoe UI&quot;;
+	color: black;
+	border-radius: 5px;
+}
+
+QDoubleSpinBox::hover {
+	background-color: rgb(185, 185, 185);
+}
+
+QDoubleSpinBox::focus {
+	background-color: rgb(35, 35, 35);
+	color: white;
+}</string>
+              </property>
+              <property name="minimum">
+               <double>0.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>100000.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="powerFreq_label">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	font: 9pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+              </property>
+              <property name="text">
+               <string>dBm</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_12">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="header_ifBw_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 11pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Полоса ПЧ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QSpinBox" name="ifBw_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QSpinBox {
+	background-color: rgb(215, 215, 215);
+	font: 10pt &quot;Segoe UI&quot;;
+	color: black;
+	border-radius: 5px;
+}
+
+QSpinBox::hover {
+	background-color: rgb(185, 185, 185);
+}
+
+QSpinBox::focus {
+	background-color: rgb(35, 35, 35);
+	color: white;
+}
+</string>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="ifBwFreq_label">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	font: 9pt &quot;Yu Gothic UI&quot;;
+	color: white;
+}</string>
+              </property>
+              <property name="text">
+               <string>Hz</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_6">
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+	margin: 0px 40px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="measure_pushButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border-radius: 5px;
+	font: 700 10pt &quot;Yu Gothic UI&quot;;
+	color: black;
+	background-color: rgb(215, 195, 115);
+}
+
+QPushButton::hover {
+	color: black;
+	background-color: rgb(245, 235, 155);
+}
+
+QPushButton::pressed {
+	color: white;
+	background-color: rgb(25, 25, 25);
+}</string>
+            </property>
+            <property name="text">
+             <string>Измерить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="status_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 10pt &quot;Yu Gothic UI&quot;;
+	color: white;
+	margin-bottom: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string>Status: offline</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="author_label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 9pt &quot;Yu Gothic UI&quot;;
+	color: rgb(150, 150, 150);
+}</string>
+            </property>
+            <property name="text">
+             <string>Created by DenisDennisov</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QChartView" name="s11_chartView" native="true">
+         <property name="styleSheet">
+          <string notr="true">QChartView { 
+	color: rgb(84, 84, 84);
+ 	border-radius: 10px; 
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>QtCharts/QChartView</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
