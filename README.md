@@ -4,7 +4,7 @@ A graphical interface for the S2VNA program created as part of a test project. T
 
 #### The application is created as a portfolio and is not commercial! It was created solely as a test project.
 
-![Screenshot](https://github.com/DenisDennisov/Video-downloader/blob/main/images/video%20downloader.png)
+![Screenshot](https://github.com/DenisDennisov/Interface_S2VNA-test_task/blob/main/images/main_menu.png)
 
 ## My instruments
 ___
