@@ -31,4 +31,4 @@ In the Release folder there is an exe compiled using MinGW64 and assembled into 
 
 ## License
 
-This project is licensed under the Apache-2.0 License - see the [LICENSE](https://github.com/DenisDennisov/Video-downloader?tab=Apache-2.0-1-ov-file#readme) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/DenisDennisov/Interface_S2VNA-test_task/blob/main/LICENSE) file for details.
